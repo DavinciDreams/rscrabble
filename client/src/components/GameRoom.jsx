@@ -8,7 +8,7 @@ const socket = io(process.env.SERVER_URL, {
   reconnection: true,
   reconnectionAttempts: 15,
   reconnectionDelay: 1000,
-  timeout: 30000,
+  timeout: 300000,
 });
 
 const GameRoom = () => {
