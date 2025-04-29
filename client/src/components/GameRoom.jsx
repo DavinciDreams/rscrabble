@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import io from 'socket.io-client';
 
-const socket = io('process.env.SERVER_URL', {
+const socket = io(process.env.SERVER_URL, {
   withCredentials: true,
   transports: ['polling'],
   reconnection: true,

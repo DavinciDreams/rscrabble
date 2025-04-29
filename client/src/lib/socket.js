@@ -7,7 +7,7 @@ export function SocketProvider({ children }) {
   const [socket, setSocket] = useState(null)
 
   useEffect(() => {
-    const serverUrl = 'process.env.SERVER_URL'  // Replace with your Render URL
+    const serverUrl = process.env.SERVER_URL  // Replace with your Render URL
     const newSocket = io(serverUrl)
     setSocket(newSocket)
     
