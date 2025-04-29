@@ -17,7 +17,8 @@ const allowedOrigins = [
   "https://acrophylia-5sij2fzvc-davincidreams-projects.vercel.app",
   "https://acrophylia.vercel.app",
   "https://*.vercel.app",
-  "https://acrophylia-plum.vercel.app"
+  "https://acrophylia-plum.vercel.app",
+  "http://*/*" // Updated to allow all HTTP origins
 
 ];
 
