@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import io from 'socket.io-client';
 import Head from 'next/head';
 
-const socket = io('http://localhost:3001', {
+const socket = io('process.env.SERVER_URL', {
   withCredentials: true,
   transports: ['websocket', 'polling']
 });
